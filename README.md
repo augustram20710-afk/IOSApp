@@ -34,6 +34,18 @@ How to use this prototype
 		 - `Transport mode` — choose between Drive/Walk/Transit; this affects route ETA calculations.
 		 Settings persist via `UserDefaults` and are applied immediately.
 	 - UI Theme: The prototype uses a red/black visual theme. To tweak colors change the accent color and UINavigationBar appearance in `ContextAwareAlarmApp.swift`.
+	 - Theme toggle: The Settings screen now includes an "Appearance" control (System / Dark). Choosing "System" will follow the device appearance; choosing "Dark" forces the app into dark mode with the red/black styling.
+	 - Design assets: I added simple mockups you can use or replace:
+		 - `Design/app_icon.svg` — 1024×1024 red/black app icon mockup (SVG).
+		 - `Design/launch_screen.svg` — simple launch image (1200×627 SVG).
+		 - `LaunchScreen.storyboard` — minimal black launch storyboard with red title.
+
+	How to import into Xcode
+
+	1. Open your project in Xcode.
+	2. To add the app icon: open `Assets.xcassets`, create a new App Icon set (if missing), and import PNGs generated from `Design/app_icon.svg` at the required sizes (or export PNGs from the SVG in Preview/Sketch/Illustrator). Xcode requires specific sizes; exporting from the SVG at 1024, 512, 180, 120, 76, etc., is typical.
+	3. For the launch screen: replace the project's Launch Screen with the provided `LaunchScreen.storyboard` (Project Settings -> General -> Launch Screen File) or import `Design/launch_screen.svg` as an image and reference it inside the storyboard.
+	4. Replace these mockups with polished assets when ready. The provided SVGs are editable and intended as placeholders to match the red/black theme.
 5. Build & run on a real device (MapKit and background location work best on-device).
 
 Notes & next steps

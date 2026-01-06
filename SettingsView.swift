@@ -48,6 +48,15 @@ struct SettingsView: View {
                 }
                 .pickerStyle(SegmentedPickerStyle())
             }
+
+            Section(header: Text("Theme")) {
+                Picker("Appearance", selection: $settings.theme) {
+                    ForEach(ThemeMode.allCases, id: \ .self) { t in
+                        Text(t == .dark ? "Dark" : "System").tag(t)
+                    }
+                }
+                .pickerStyle(SegmentedPickerStyle())
+            }
         }
         .navigationTitle("Settings")
         .onAppear {

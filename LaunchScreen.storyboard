@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Minimal LaunchScreen storyboard: black background with centered red title -->
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+  <scenes>
+    <!--View Controller-->
+    <scene sceneID="1">
+      <objects>
+        <viewController id="vc1" sceneMemberID="viewController">
+          <view key="view" contentMode="scaleToFill" id="v1">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <color key="backgroundColor" red="0.043" green="0.043" blue="0.043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <subviews>
+              <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Context Alarm" textAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="label1">
+                <rect key="frame" x="16" y="344" width="343" height="48"/>
+                <color key="textColor" red="1" green="0.176" blue="0.176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+              </label>
+            </subviews>
+            <constraints>
+              <constraint firstItem="label1" firstAttribute="centerX" secondItem="v1" secondAttribute="centerX" id="c1"/>
+              <constraint firstItem="label1" firstAttribute="centerY" secondItem="v1" secondAttribute="centerY" id="c2"/>
+            </constraints>
+          </view>
+        </viewController>
+      </objects>
+      <point key="canvasLocation" x="53" y="105"/>
+    </scene>
+  </scenes>
+</document>

@@ -26,7 +26,7 @@ struct ContextAwareAlarmApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .preferredColorScheme(.dark)
+                .preferredColorScheme(settingsManager.theme == .dark ? .dark : nil)
                 .accentColor(.red)
                 .environmentObject(calendarManager)
                 .environmentObject(locationManager)
